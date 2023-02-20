@@ -1,0 +1,71 @@
+.home{
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    .content{
+        display : grid;
+        grid-template-columns : 50% auto;
+        gap : 4rem;
+        .explore{
+            div{
+              width : 150px;
+              height :150px;
+              border-radius : 50%;
+              background-color: white;
+            }
+        }
+    
+        .introduction {
+            p{
+                width: 100%;
+            }
+            p h2 {
+                margin: 40px 0 70px  0;
+                width : 100%;
+                font-size: 8rem;
+                letter-spacing: 10px;
+                line-height: 0.5;
+            }
+            span{
+                font-size: 2rem;
+                word-spacing: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 960px){
+    .home{
+        .content {
+            width : 90%;
+        }
+    }
+}
+
+@media screen and (max-width : 720px){
+    .home{
+        .content {
+            width : 90%;
+            grid-template-columns: auto;
+            .introduction{
+                text-align : center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 576px){
+    .home{
+        .content {
+           
+            .introduction{
+                p h2 {
+                    margin: 20px 0 35px 0;
+                    width: 100%;
+                    font-size: 5rem;
+                    letter-spacing: 10px;
+                    line-height: 0.5;
+            }
+        }
+    }
+}
+}
+

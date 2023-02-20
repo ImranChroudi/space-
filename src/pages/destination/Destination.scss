@@ -1,0 +1,97 @@
+.destination{
+    background-image : url('../../assets/destination/background-destination-desktop.jpg');
+    .description {
+        margin-top : 60px;
+        margin-bottom : 0 !important;
+    }
+    .menu__info{
+        .menu{
+            margin-bottom : 40px;
+            ul{
+                padding : 0;
+                margin: 0;
+                gap : 2rem;
+                li{
+                    color : white;
+                    cursor : pointer;
+                    padding : 10px 0;
+                    &.active{
+                        border-bottom : 1px solid white ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.img__destination{
+
+    .img{
+        width : 350px;
+        height : 350px;
+        position : relative;
+        padding-left : 70px;
+
+        img{
+            position : absolute ;
+            width : 100%;
+            height : 100%;
+            top : 0;
+            left :0
+        }
+    }
+
+}
+
+/* media */
+
+@media screen and (max-width : 960px){
+    .destination{
+        .content {
+            gap: 2rem;
+            width : 90%;
+            .title{
+                font-size: 5rem;
+            } 
+            .img__destination{
+                .img{
+                    padding-left : 30px;
+                    width: 300px;
+                    height: 300px;
+                    position: relative;
+                    padding-left: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 720px){
+    .destination{
+        padding: 200px 0 100px 0;
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+        .content {
+            width : 90%;
+            grid-template-columns: auto;
+            .image{
+                 display: flex;
+                 justify-content: center;
+            }
+         }
+}}
+
+@media screen and (max-width : 576px){
+    .home{
+        .content {
+            .introduction{
+                p h2 {
+                    margin: 20px 0 35px 0;
+                    width: 100%;
+                    font-size: 5rem;
+                    letter-spacing: 10px;
+                    line-height: 0.5;
+            }
+        }
+    }
+}
+}
